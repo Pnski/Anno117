@@ -22,10 +22,23 @@ export default {
   // The path to the source root.
   root: "src",
 
-  // Some additional configuration options and their defaults:
-  // theme: "default", // try "light", "dark", "slate", etc.
-  // header: "", // what to show in the header (HTML)
-  // footer: "Built with Observable.", // what to show in the footer (HTML)
+  theme: ["air","deep-space"],
+  // header: "TnL Dps Stats", // what to show in the header (HTML)
+  footer: `
+    <div style="
+        display: flex; 
+        justify-content: space-between; 
+    ">
+      <div style="display: flex; align-items: center; gap: 15px;">
+        <a href="https://ko-fi.com/Q5Q4YAI3F" target="_blank" style="transition: transform 0.2s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+          <img height="36" style="border:0px; height:36px; display: block;" src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" border="0" alt="Buy Me a Coffee at ko-fi.com" />
+        </a>
+      </div>
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" style="
+          color: var(--theme-foreground);">
+        CC-BY-SA-4.0
+      </a>
+    </div>`,
   // sidebar: true, // whether to show the sidebar
   // toc: true, // whether to show the table of contents
   // pager: true, // whether to show previous & next links in the footer
